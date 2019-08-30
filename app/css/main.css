@@ -5,12 +5,323 @@
 
 @font-face {
   font-family: 'Monsterrat';
-  src: url("../fonts/Montserrat-Medium.otf");
-  font-weight: normal; }
+  src: url("../fonts/Montserrat-Medium.otf"); }
+
+@font-face {
+  font-family: 'Monsterrat-l';
+  src: url("../fonts/Montserrat-Light.otf"); }
+
+@font-face {
+  font-family: 'Monsterrat-b';
+  src: url("../fonts/Montserrat-Bold.otf"); }
 
 body {
   font-family: "Monsterrat"; }
 
+.modal-content {
+  background: url("./../images/modalbg.png");
+  background-size: cover;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  margin-top: 120px; }
+
+.close {
+  margin-top: 25px;
+  margin-right: 40px;
+  opacity: 1;
+  text-decoration: none;
+  outline: none; }
+  .close:hover {
+    opacity: 1; }
+
+/*MODAL AUTH*/
+.modal-body {
+  text-align: center;
+  width: 50%;
+  margin-left: 25%; }
+
+.modal_title {
+  margin: 0;
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: white; }
+
+.modal_form {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .modal_form input {
+    font-family: "Monsterrat-l";
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 10px; }
+    .modal_form input:nth-child(2) {
+      margin-top: 25px; }
+    .modal_form input::-webkit-input-placeholder {
+      color: white; }
+    .modal_form input::-moz-placeholder {
+      color: white; }
+    .modal_form input:-ms-input-placeholder {
+      color: white; }
+    .modal_form input::-ms-input-placeholder {
+      color: white; }
+    .modal_form input::placeholder {
+      color: white; }
+  .modal_form button {
+    border: none;
+    color: #fe0000;
+    background: white;
+    margin-top: 45px;
+    padding: 10px;
+    border-radius: 10px; }
+
+.modal_footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .modal_footer a {
+    font-family: "Monsterrat-l";
+    color: white;
+    font-weight: 300;
+    text-decoration: underline; }
+
+/*END MODAL AUTH*/
+/*MODAL FEEDBACK*/
+.modal_form_feed {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px; }
+  .modal_form_feed input {
+    font-family: "Monsterrat-l";
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 25px; }
+    .modal_form_feed input:nth-child(1) {
+      margin-top: 0; }
+    .modal_form_feed input::-webkit-input-placeholder {
+      color: white; }
+    .modal_form_feed input::-moz-placeholder {
+      color: white; }
+    .modal_form_feed input:-ms-input-placeholder {
+      color: white; }
+    .modal_form_feed input::-ms-input-placeholder {
+      color: white; }
+    .modal_form_feed input::placeholder {
+      color: white; }
+  .modal_form_feed .dropdown {
+    font-family: "Monsterrat-l";
+    padding-left: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    text-align: left;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white; }
+    .modal_form_feed .dropdown:hover {
+      cursor: pointer; }
+  .modal_form_feed .dropdown-menu {
+    font-family: "Monsterrat-l";
+    width: 92%;
+    top: 59%;
+    left: 4%;
+    border-radius: 0;
+    padding: 0; }
+    .modal_form_feed .dropdown-menu li {
+      padding: 10px;
+      color: white;
+      background: #fe0000; }
+      .modal_form_feed .dropdown-menu li:hover {
+        background: #e00000;
+        cursor: pointer; }
+  .modal_form_feed button {
+    border: none;
+    color: #fe0000;
+    background: white;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px; }
+
+/*END MODAL FEEDBACK*/
+/*MODAL REGISTRATION*/
+.modal-body_reg {
+  text-align: center; }
+
+.modal_title_reg {
+  width: 50%;
+  padding-top: 40px;
+  margin-left: 25%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white; }
+
+.modal_footer_reg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  margin-top: 10px; }
+  .modal_footer_reg a {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Monsterrat-l";
+    color: white;
+    font-weight: 300;
+    text-decoration: underline; }
+
+.modal_form_reg {
+  margin-top: 60px; }
+  .modal_form_reg input {
+    margin: 0px;
+    font-family: "Monsterrat-l";
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+    padding-left: 0px;
+    padding-bottom: 10px; }
+    .modal_form_reg input::-webkit-input-placeholder {
+      color: white; }
+    .modal_form_reg input::-moz-placeholder {
+      color: white; }
+    .modal_form_reg input:-ms-input-placeholder {
+      color: white; }
+    .modal_form_reg input::-ms-input-placeholder {
+      color: white; }
+    .modal_form_reg input::placeholder {
+      color: white; }
+  .modal_form_reg .modal_reg input:last-child {
+    margin-top: 25px; }
+  .modal_form_reg .button_reg {
+    width: 50%;
+    margin-left: 25%;
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .modal_form_reg .button_reg button {
+      width: 100%;
+      border: none;
+      color: #fe0000;
+      background: white;
+      margin-top: 45px;
+      padding: 10px;
+      border-radius: 10px; }
+
+/*END MODAL REGISTRATION*/
+/*MODAL UPLOAD*/
+.modal_form_upload {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px; }
+  .modal_form_upload input {
+    font-family: "Monsterrat-l";
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 25px; }
+    .modal_form_upload input::-webkit-input-placeholder {
+      color: white; }
+    .modal_form_upload input::-moz-placeholder {
+      color: white; }
+    .modal_form_upload input:-ms-input-placeholder {
+      color: white; }
+    .modal_form_upload input::-ms-input-placeholder {
+      color: white; }
+    .modal_form_upload input::placeholder {
+      color: white; }
+  .modal_form_upload .preview {
+    width: 200px;
+    height: 130px; }
+  .modal_form_upload button {
+    width: 100%;
+    border: none;
+    color: #fe0000;
+    background: white;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px; }
+  .modal_form_upload .delete {
+    position: absolute;
+    top: 40%;
+    left: 75%;
+    width: 15px;
+    height: 15px;
+    visibility: hidden; }
+    .modal_form_upload .delete:hover {
+      cursor: pointer; }
+
+/*END MODAL UPLOAD*/
 .navbar-default {
   border-radius: 0 !important;
   background: #2a2a2a;
@@ -40,8 +351,10 @@ img {
   padding: 20px; }
   .navbar-default .navbar-nav > li > a:hover {
     background: #d50f0d;
-    color: white;
-    font-size: 14px; }
+    color: white; }
+  .navbar-default .navbar-nav > li > a:focus {
+    background: #d50f0d;
+    color: white; }
 
 .one {
   padding-top: 120px;
@@ -50,7 +363,7 @@ img {
     -webkit-box-shadow: 0px 0px 197px -79px white;
             box-shadow: 0px 0px 197px -79px white;
     padding-top: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     background-image: url(../images/bg_screen.png);
     background-size: cover; }
     .one .center .main_title {
@@ -201,9 +514,10 @@ img {
               text-decoration: none; }
 
 .two {
-  background: #000; }
-  .two .p {
-    padding-top: 120px;
+  background: #000;
+  padding-bottom: 80px; }
+  .two .h3 {
+    padding-top: 80px;
     color: white;
     font-size: 35px;
     text-transform: uppercase;
@@ -235,7 +549,7 @@ img {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
-      height: 300px;
+      height: 350px;
       -webkit-box-pack: justify;
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
@@ -280,3 +594,277 @@ img {
         font-size: 20px;
         text-align: center;
         font-weight: bold; }
+
+.three {
+  background: url("./../images/bg_screen.png");
+  background-size: cover;
+  color: white; }
+  .three .h3 {
+    padding-top: 60px;
+    color: white;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto; }
+  .three .winners {
+    margin-top: 60px; }
+    .three .winners_header div {
+      text-align: left;
+      font-size: 12px;
+      text-transform: uppercase; }
+    .three .winners_body {
+      font-family: "Monsterrat-b";
+      font-size: 17px; }
+      .three .winners_body div {
+        margin-top: 30px; }
+  .three .pagination {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .three .swiper-container {
+    width: 100%;
+    height: auto; }
+  .three .swiper-slide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .three .swiper-pagination {
+    position: relative;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background: #d50f0d;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .three .swiper-pagination-bullet {
+    outline: none;
+    font-family: "Monsterrat-b";
+    width: 25px;
+    height: 25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    color: white;
+    opacity: 1;
+    background: transparent; }
+  .three .leftbtn,
+  .three .rightbtn {
+    outline: none;
+    margin-top: 40px;
+    background: #d50f0d;
+    border-radius: 20px;
+    height: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .three .leftbtn img,
+    .three .rightbtn img {
+      width: 5px;
+      height: 12px; }
+  .three .leftbtn {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-right: -70px; }
+  .three .rightbtn {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: -70px; }
+  .three .swiper-pagination-bullet-active {
+    outline: none;
+    color: black;
+    background: #ffffff; }
+
+.four .h3 {
+  padding-top: 60px;
+  color: #6d6d6d;
+  font-size: 35px;
+  text-transform: uppercase; }
+
+.four .panel {
+  margin-top: 40px;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.four .panel-default {
+  border: none; }
+
+.four .panel-heading {
+  margin-top: 20px;
+  background: transparent;
+  border: none; }
+
+.four .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border: none; }
+
+.four a:active,
+.four a:focus,
+.four a:hover {
+  text-decoration: none;
+  border: none; }
+
+.four .panel-title {
+  font-family: "Monsterrat";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .four .panel-title img {
+    width: 17px;
+    height: 10px;
+    margin-right: 20px; }
+
+.five {
+  background: url("./../images/bg_screen.png");
+  background-size: cover; }
+  .five .header_lk {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .five .name-sur h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px; }
+  .five .edit img {
+    width: 60px;
+    height: 60px; }
+  .five .edit:hover {
+    cursor: pointer; }
+  .five .upload_header {
+    color: white; }
+  .five .upload_body div {
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white; }
+  .five .upload_more {
+    background-color: #d50f0d;
+    -webkit-box-shadow: -0.122px 6.999px 24px 0px rgba(99, 2, 2, 0.51);
+            box-shadow: -0.122px 6.999px 24px 0px rgba(99, 2, 2, 0.51);
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 20px;
+    padding: 12px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    outline: none; }
+  .five .prizes_lk {
+    margin-top: 35px;
+    margin-bottom: 15px; }
+    .five .prizes_lk h4 {
+      font-size: 25px;
+      font-weight: bold;
+      color: white; }
+  .five .table_prizes {
+    background: #d50f0d;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 40px; }
+    .five .table_prizes .prizes-header {
+      padding: 20px;
+      -webkit-box-shadow: inset 0px -1px 0px #8d0000;
+              box-shadow: inset 0px -1px 0px #8d0000; }
+    .five .table_prizes_body {
+      background: #d50f0d;
+      font-size: 16px;
+      line-height: 20px; }
+      .five .table_prizes_body .part {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 80px;
+        -webkit-box-shadow: inset 0px -1px 0px #8d0000;
+                box-shadow: inset 0px -1px 0px #8d0000; }
+        .five .table_prizes_body .part .get {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .five .table_prizes_body .part .get img {
+            width: 40px;
+            height: 40px; }
+          .five .table_prizes_body .part .get a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: 1px solid #ffffff; }
