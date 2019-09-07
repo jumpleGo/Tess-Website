@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -13,363 +14,141 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header col-sm-4">
-                <a class="navbar-brand" href="#"><img src="images/logo_TESS.png" alt=""></a>
-                <a class="navbar-brand" href="#"><img src="images/logo_KARO.png" alt=""></a>
-            </div>
-            <div class="col-sm-1"></div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Призы</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#feed">Победители</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#reg">FAQ</a></li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="" data-toggle="modal" data-target="#auth">Вход</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-
-    <section class="one">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10 center">
-                    <div class="center_content">
-                        <div class="col-sm-7 main_title">
-                            <h2><span class="spec">Регистрируй</span> чеки и получай <span class="spec">призы</span>!
-                            </h2>
-                            <!-- <h1>горячие новики  от <span class="tess"><img src="images/logo_TESS.png" alt=""></span><br> в сезон премьер!</h1> -->
-                            <div class="teas ">
-                                <img src="images/12.png" alt="">
-                                <img src="images/10.png" alt="">
-                                <img src="images/11.png" alt="">
-                                <img src="images/9.png" alt="">
-                                <img src="images/8.png" alt="">
-
-                            </div>
-                        </div>
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-4 film">
-                            <h3>Регистрация чека</h3>
-                            <div class="descr">
-                                <p>Купи чай TESS в пирамидках</p>
-                                <p>Зарегистрируй чек на сайте</p>
-                                <p>Прими участие в розыгрыше призов от TESS</p>
-                            </div>
-                            <div class="awards">
-                                <div class="award">
-                                    <div class="award_img"><img src="images/kolonka.png" alt=""></div>
-                                    <div class="award_p">
-                                        <p>портативная колонка</p>
-                                    </div>
-                                </div>
-                                <div class="award">
-                                    <div class="award_img"><img src="images/sam.png" alt=""></div>
-                                    <div class="award_p">
-                                        <p>самокат</p>
-                                    </div>
-                                </div>
-                                <div class="award">
-                                    <div class="award_img"><img src="images/backpack.png" alt=""></div>
-                                    <div class="award_p">
-                                        <p>антикражный рюкзак</p>
-                                    </div>
-                                </div>
-                                <div class="award">
-                                    <div class="award_img"><img src="images/two-cinema-tickets.png" alt=""></div>
-                                    <div class="award_p">
-                                        <p>Билеты в кинотеатр</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="reg_btn">
-                                <a href="" class="reg_check">зарегистрировать</a>
-                            </div>
-                        </div>
-
+   
+            <div class="navbar_custom" >
+                    <div class="container">
+                            <div class="row">
+                    <div class="navbar-brands col-sm-3">
+                        <img class="navbar-brand" src="images/logo_TESS.png" alt="">
+                        <img class="navbar-brand" src="images/logo_KARO.png" alt="">
                     </div>
-
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-center col-sm-6">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#reg">вопрос-ответ</a></li>
+                            <li><a href="#">Призы</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#feed">Победители</a></li>
+                           
+                        </ul>
+        
+                       
+                    </div>
+                    <div class="navbar-end col-sm-3">
+                        <span class="greet">
+                            Здравствуйте, Константин!
+                        </span>
+                            <ul class="nav navbar-nav auth">
+                                    <li><a href="" data-toggle="modal" data-target="#auth">Выйти</a></li>
+                                </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
                 </div>
-                <div class="col-sm-1"></div>
-            </div>
+   
+       </div>
+   </div>
+    <!-- <img class="chairs" src="images/Chairs.png" alt="">         -->
+   
 
-        </div>
-        <img src="images/bg_seats2.png" alt="">
-    </section>
-    <section class="two">
-        <div class="container">
-            <div class="row">
-                <h3 class="h3"> Призы:</h3>
-                <div class="awards">
-                    <div class="col-sm-3 award">
-                        <div class="award_img"><img src="images/kolonka.png" alt=""></div>
-                        <div class="award_p">
-                            <p>портативная колонка</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 award">
-                        <div class="award_img"><img src="images/sam.png" alt=""></div>
-                        <div class="award_p">
-                            <p>самокат</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 award">
-                        <div class="award_img"><img src="images/backpack.png" alt=""></div>
-                        <div class="award_p">
-                            <p>антикражный рюкзак</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 award">
-                        <div class="award_img"><img src="images/two-cinema-tickets.png" alt=""></div>
-                        <div class="award_p">
-                            <p>билеты в кинотеатр</p>
-                        </div>
-                    </div>
+   <div id="widget-1">
+      <div class="container-fluid">
+          <div class="row">
+            <div class="content">
+              <div class="main_text col-sm-4" >
+                  <p>горячие новинки от</p>
+                  <img src="images/TessLogo_Middle.png" alt="">
+                  <p>в сезон премьер</p>
+              </div>
+              <img class="center_img" src="images/center_png.png" alt="">
+              <div class="action">
+                <a class="action_button" href="">зарегистрировать чек</a>
+                <a class="more" href="">Подробнее</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+<div class="dotline">
+   <div class="container">
+     <div class="row">
+         <div class="col-sm-10 col-sm-offset-1">
+                <img src="images/DotLine.png" alt="">
+         </div>
+     </div>
+   </div>
+</div>
+
+
+<div id="widget-2">
+<div class="container">
+    <div class="row">
+        <div class="content_2 col-sm-10 col-sm-offset-1">
+                <div class="block">
+                    <img src="images/TessBox.png" alt="">
+                    <span class="bold">Покупай</span>
+                    <p class="regular">чай TESS <br>в пирамидках</p>
+                
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="three">
-        <div class="container">
-            <div class="row">
-                <h3 class="h3">Победители</h3>
-            </div>
-
-            <div class="row">
-                <div class="winners">
-                    <div class="winners_header">
-                        <div class="col-sm-3">дата выигрыша</div>
-                        <div class="col-sm-3">имя</div>
-                        <div class="col-sm-3">e-mail</div>
-                        <div class="col-sm-3">приз</div>
-                    </div>
-                    <div class="swiper-container row">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper ">
-                            <!-- Slides -->
-                            <div class="swiper-slide winners_body ">
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Билеты</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Портативная колонка</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide winners_body ">
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Билеты</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Портативная колонка</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide winners_body ">
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Билеты</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Портативная колонка</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide winners_body ">
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Билеты</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Портативная колонка</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide winners_body ">
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Билеты</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Портативная колонка</div>
-                                </div>
-                                <div class="block">
-                                    <div class="col-sm-3">05.07.2018 10:00</div>
-                                    <div class="col-sm-3">Константин</div>
-                                    <div class="col-sm-3">kostya@XXX.XX</div>
-                                    <div class="col-sm-3">Самокат</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="row">
-                            <div class="col-sm-4"></div>
-                            <div class="col-sm-4 pagination">
-                                <div class="col-sm-3 leftbtn"><img src="images/leftarrow.png" alt=""></div>
-                                <div class="swiper-pagination col-sm-6">
-                                </div>
-                                <div class="col-sm-3 rightbtn"><img src="images/rightarrow.png" alt=""></div>
-                            </div>
-                            <div class="col-sm-4"></div>
-                        </div>
-
-
-                    </div>
-
+                <div class="block">
+                    <img src="images/Receipt.png" alt="">
+                    <span class="bold">Регистрируй</span>
+                    <p class="regular">чек <br>на сайте</p>
                 </div>
-
-            </div>
-
+                <div class="block">
+                    <img src="images/Prises.png" alt="">
+                    <span class="bold">Учавствуй</span>
+                    <p class="regular">в розыгрыше<br> призов</p>
+                </div>
         </div>
-    </section>
+    </div>
+</div>
+</div>
 
-    <section class="four">
+<div class="dotline">
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-10 col-sm-offset-1">
+                     <img src="images/DotLine.png" alt="">
+              </div>
+          </div>
+        </div>
+     </div>
+
+
+
+
+
+    
+   <div id="widget-3">
+       <div class="container">
+           <div class="row">
+<div class="col-sm-10 col-sm-offset-1 name">
+    <h2>
+        Личный кабинет
+    </h2>
+</div>
+           </div>
+           <div class="row">
+               <div class="col-sm-12 account">
+
+               </div>
+           </div>
+       </div>
+   </div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <section class="four">
         <div class="container">
             <div class="row">
                 <h3 class="h3">Часто задаваемые вопросы</h3>
