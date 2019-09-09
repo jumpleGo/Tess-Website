@@ -36,7 +36,7 @@ body {
   bottom: 0;
   width: 100%;
   height: auto;
-  z-index: 2; }
+  z-index: 100; }
 
 .modal-content {
   background: url("./../images/modalbg.png");
@@ -413,7 +413,8 @@ img {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  float: right; }
 
 .greet {
   font-family: "Monsterrat-exb";
@@ -442,6 +443,7 @@ img {
 #widget-1 .content {
   background: url("./../images/background-w1.png");
   background-size: cover;
+  background-position: center;
   font-family: 'Monsterrat-SemiBold';
   display: -webkit-box;
   display: -webkit-flex;
@@ -558,65 +560,284 @@ img {
   margin-top: 95px;
   margin-bottom: 40px; }
   #widget-3 .name h2 {
-    font-family: 'Monsterrat-b';
+    font-family: 'Monsterrat-SemiBold';
     color: white;
     text-transform: uppercase;
-    font-size: 27px;
+    font-size: 30px;
     margin: 0; }
 
-#widget-3 .account {
-  background: url("./../images/FilmBackground.png");
-  height: 1600px;
-  background-size: contain; }
+#widget-3 .content_3 {
+  padding: 0 30px; }
+  #widget-3 .content_3 .account {
+    background: url("./../images/FilmBackground.png");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+    #widget-3 .content_3 .account_header {
+      margin-bottom: 60px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+      #widget-3 .content_3 .account_header_name {
+        font-family: 'Monsterrat-r';
+        color: white;
+        margin-top: 30px;
+        font-size: 50px;
+        line-height: 1.2; }
+      #widget-3 .content_3 .account_header_edit img {
+        height: 35px;
+        width: auto;
+        margin-top: -50px; }
+      #widget-3 .content_3 .account_header_number {
+        font-family: 'Monsterrat-r';
+        color: #ff0f0a;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; }
+        #widget-3 .content_3 .account_header_number .number {
+          margin-right: -60px;
+          font-size: 80px;
+          margin-bottom: -40px; }
+        #widget-3 .content_3 .account_header_number .receipt {
+          margin-right: -60px;
+          font-size: 50px;
+          margin-bottom: -15px; }
+      #widget-3 .content_3 .account_header_img img {
+        height: 100px;
+        width: auto; }
+    #widget-3 .content_3 .account_details_center {
+      padding-bottom: 25px; }
+    #widget-3 .content_3 .account_details_email {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 20px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #widget-3 .content_3 .account_details_email span {
+        font-family: 'Monsterrat-r';
+        color: white;
+        font-size: 27px; }
+      #widget-3 .content_3 .account_details_email img {
+        height: 20px;
+        width: auto;
+        margin-right: 35px; }
+    #widget-3 .content_3 .account_details_phone {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      #widget-3 .content_3 .account_details_phone span {
+        font-family: 'Monsterrat-r';
+        color: white;
+        font-size: 27px; }
+      #widget-3 .content_3 .account_details_phone img {
+        margin-right: 35px;
+        height: auto;
+        width: 30px; }
+    #widget-3 .content_3 .account .dotline_account {
+      width: 90%;
+      margin-left: 5%; }
+    #widget-3 .content_3 .account_receipt_lines {
+      margin-top: 50px;
+      margin-bottom: 30px; }
+    #widget-3 .content_3 .account_receipt_line {
+      margin-bottom: 20px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #widget-3 .content_3 .account_receipt_line .receipt {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        #widget-3 .content_3 .account_receipt_line .receipt img {
+          height: 50px;
+          width: auto;
+          margin-right: 30px; }
+        #widget-3 .content_3 .account_receipt_line .receipt span {
+          font-family: 'Monsterrat-SemiBold';
+          font-size: 18px;
+          color: white; }
+      #widget-3 .content_3 .account_receipt_line .status {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        text-align: center; }
+        #widget-3 .content_3 .account_receipt_line .status img {
+          height: 25px;
+          width: auto;
+          margin-right: 10px; }
+        #widget-3 .content_3 .account_receipt_line .status span {
+          font-family: 'Monsterrat-SemiBold';
+          font-size: 18px;
+          color: white; }
+      #widget-3 .content_3 .account_receipt_line .date {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
+        #widget-3 .content_3 .account_receipt_line .date .day {
+          margin-right: 10px; }
+        #widget-3 .content_3 .account_receipt_line .date .day,
+        #widget-3 .content_3 .account_receipt_line .date .time {
+          font-family: 'Monsterrat-SemiBold';
+          font-size: 18px;
+          color: white; }
+    #widget-3 .content_3 .account_prizes {
+      margin-top: 30px; }
+      #widget-3 .content_3 .account_prizes_header {
+        margin-bottom: 25px; }
+        #widget-3 .content_3 .account_prizes_header .date {
+          color: white;
+          font-family: 'Monsterrat-SemiBold';
+          font-size: 14px; }
+        #widget-3 .content_3 .account_prizes_header .code {
+          text-align: center;
+          color: white;
+          font-family: 'Monsterrat-SemiBold';
+          font-size: 14px; }
+        #widget-3 .content_3 .account_prizes_header .prize {
+          text-align: center;
+          color: white;
+          font-family: 'Monsterrat-SemiBold';
+          font-size: 14px; }
+      #widget-3 .content_3 .account_prizes_content {
+        margin-bottom: 7px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        #widget-3 .content_3 .account_prizes_content:last-child {
+          margin-bottom: 80px; }
+        #widget-3 .content_3 .account_prizes_content .date {
+          color: white;
+          font-family: 'Monsterrat-SemiBold';
+          font-size: 18px; }
+        #widget-3 .content_3 .account_prizes_content .code {
+          text-align: center;
+          color: white;
+          font-family: 'Monsterrat-SemiBold';
+          font-size: 18px; }
+        #widget-3 .content_3 .account_prizes_content .prize {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          text-align: center;
+          color: white;
+          font-family: 'Monsterrat-SemiBold';
+          font-size: 16px; }
+          #widget-3 .content_3 .account_prizes_content .prize img {
+            width: 40px;
+            height: auto;
+            margin-right: 10px; }
+        #widget-3 .content_3 .account_prizes_content .button {
+          text-align: center; }
+          #widget-3 .content_3 .account_prizes_content .button a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Monsterrat-SemiBold';
+            font-size: 16px;
+            background: #ff0f09;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            border-radius: 25px; }
 
-.four .h3 {
-  padding-top: 60px;
-  color: #6d6d6d;
-  font-size: 35px;
-  text-transform: uppercase; }
-
-.four .panel {
-  margin-top: 40px;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
-
-.four .panel-default {
-  border: none; }
-
-.four .panel-heading {
-  margin-top: 20px;
-  background: transparent;
-  border: none; }
-
-.four .panel-default > .panel-heading + .panel-collapse > .panel-body {
-  border: none; }
-
-.four a:active,
-.four a:focus,
-.four a:hover {
-  text-decoration: none;
-  border: none; }
-
-.four .panel-title {
-  font-family: "Monsterrat";
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .four .panel-title img {
-    width: 17px;
-    height: 10px;
-    margin-right: 20px; }
-
-.five {
-  background: url("./../images/bg_screen.png");
-  background-size: cover; }
-  .five .header_lk {
+#widget-4 {
+  margin-top: 100px; }
+  #widget-4 .h3 {
+    color: white;
+    font-family: 'Monsterrat-SemiBold';
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 50px; }
+  #widget-4 .panel {
     margin-top: 40px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: transparent;
+    color: white;
+    font-family: 'Monsterrat-r'; }
+  #widget-4 .panel-default {
+    border: none; }
+  #widget-4 .panel-heading {
+    padding: 0;
+    color: white;
+    background: transparent;
+    border: none; }
+  #widget-4 .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border: none;
+    color: #b8b8b8;
+    font-size: 16px;
+    padding: 10px 40px; }
+  #widget-4 a:active,
+  #widget-4 a:focus,
+  #widget-4 a:hover {
+    text-decoration: none;
+    border: none; }
+  #widget-4 .panel-title {
+    font-family: 'Monsterrat-r';
+    font-size: 22px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -625,28 +846,121 @@ img {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-  .five .name-sur h4 {
+
+#widget-5 {
+  margin-top: 60px;
+  margin-bottom: 80px; }
+  #widget-5 .h3 {
     color: white;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 50px; }
-  .five .edit img {
-    width: 60px;
-    height: 60px; }
-  .five .edit:hover {
-    cursor: pointer; }
-  .five .upload_header {
-    color: white; }
-  .five .upload_body div {
-    padding-top: 30px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white; }
-  .five .upload_more {
-    background-color: #d50f0d;
-    -webkit-box-shadow: -0.122px 6.999px 24px 0px rgba(99, 2, 2, 0.51);
-            box-shadow: -0.122px 6.999px 24px 0px rgba(99, 2, 2, 0.51);
-    margin-top: 30px;
+    font-family: 'Monsterrat-SemiBold';
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 70px; }
+  #widget-5 .prizes {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    #widget-5 .prizes .prize {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #widget-5 .prizes .prize img {
+        width: 70%;
+        height: auto; }
+      #widget-5 .prizes .prize span {
+        text-align: center;
+        font-size: 19px;
+        text-transform: uppercase;
+        font-family: 'Monsterrat-SemiBold';
+        color: white;
+        margin-top: 30px;
+        line-height: 1.2; }
+
+#widget-6 {
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 18%; }
+  #widget-6 .h3 {
+    color: white;
+    font-family: 'Monsterrat-SemiBold';
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 70px; }
+  #widget-6 .winners_header div {
+    text-align: left;
+    font-size: 13px; }
+  #widget-6 .winners_body {
+    font-family: "Monsterrat-r";
+    font-size: 17px; }
+  #widget-6 .winners_body .block {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #707070; }
+  #widget-6 .pagination {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  #widget-6 .swiper-container {
+    width: 100%;
+    height: auto; }
+  #widget-6 .swiper-slide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  #widget-6 .swiper-pagination {
+    width: 100%;
+    position: relative;
+    height: 40px;
+    margin-top: 80px;
+    background: #d50f0d;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  #widget-6 .swiper-pagination-bullet {
+    outline: none;
+    font-family: "Monsterrat-r";
+    width: 25px;
+    height: 25px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -659,65 +973,63 @@ img {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    border-radius: 20px;
-    padding: 12px 0;
-    text-decoration: none;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
     color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 15px;
-    outline: none; }
-  .five .prizes_lk {
-    margin-top: 35px;
-    margin-bottom: 15px; }
-    .five .prizes_lk h4 {
-      font-size: 25px;
-      font-weight: bold;
-      color: white; }
-  .five .table_prizes {
+    opacity: 1;
+    background: transparent; }
+  #widget-6 .leftbtn,
+  #widget-6 .rightbtn {
+    outline: none;
+    margin-top: 80px;
     background: #d50f0d;
+    border-radius: 20px;
+    height: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #widget-6 .leftbtn img,
+  #widget-6 .rightbtn img {
+    width: 5px;
+    height: 12px; }
+  #widget-6 .leftbtn {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-right: -50px; }
+  #widget-6 .rightbtn {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: -50px; }
+  #widget-6 .swiper-pagination-bullet-active {
+    outline: none;
+    color: black;
+    background: #ffffff; }
+
+#widget-7 .footer {
+  background: #000;
+  padding-bottom: 110px;
+  z-index: 105;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  #widget-7 .footer a {
     color: white;
-    margin-top: 30px;
-    margin-bottom: 40px; }
-    .five .table_prizes .prizes-header {
-      padding: 20px;
-      -webkit-box-shadow: inset 0px -1px 0px #8d0000;
-              box-shadow: inset 0px -1px 0px #8d0000; }
-    .five .table_prizes_body {
-      background: #d50f0d;
-      font-size: 16px;
-      line-height: 20px; }
-      .five .table_prizes_body .part {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        height: 80px;
-        -webkit-box-shadow: inset 0px -1px 0px #8d0000;
-                box-shadow: inset 0px -1px 0px #8d0000; }
-        .five .table_prizes_body .part .get {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: justify;
-          -webkit-justify-content: space-between;
-              -ms-flex-pack: justify;
-                  justify-content: space-between;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-              -ms-flex-align: center;
-                  align-items: center; }
-          .five .table_prizes_body .part .get img {
-            width: 40px;
-            height: 40px; }
-          .five .table_prizes_body .part .get a {
-            color: white;
-            text-decoration: none;
-            padding: 12px 20px;
-            font-size: 16px;
-            border: 1px solid #ffffff; }
+    text-decoration: none; }
