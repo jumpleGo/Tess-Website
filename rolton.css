@@ -1,0 +1,84 @@
+/*ШАГ 5*/
+    /*В*
+    .last-chat-item .chat-item-form .form-row > label.radio .custom-check, .last-chat-item .chat-item-form .form-row > label.checkbox .custom-check
+    Убрать
+         padding: 16px 0 0 26px; 
+    */
+
+    /*Для мобилки сделать: 
+    .last-chat-item .rollton-form .form-row label.checkbox {
+    margin-top: 20px;
+    }
+    */
+
+
+
+    .chat-item:not(.last-chat-item) .btn-holder .button-default.clicked{/*сообщения от пользователя как по макету*/
+    padding: 8px 11px 9px 11px;
+    font-size: 16px;
+    }
+
+
+
+/*хвостики на те смс, где есть формы*/
+.last-chat-item .chat-item-form .form-row:after{
+  background: url(https://bafsy.com/files/5d07adaa504271faf59a8f64c37f4312121830dd.svg);
+    content: '';
+    position: relative;
+    display: block;
+    right: 0;
+    left: 105%;
+    top: auto;
+    bottom: -10px;
+    width: 19px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    z-index: -1;
+    }
+
+    /*хвостики на смс, которые появляются при выборе кнопки (типа "ввести код")*/
+    .sender-item .message:after{
+      background: url(https://bafsy.com/files/eb81009a4fda2c2f5b76696233b93b9cd2ee5187.svg);
+      content: '';
+      position: absolute;
+      right: -5px;
+      top: auto;
+      bottom: 0px;
+      width: 19px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 100% 100%;
+      z-index: -1;
+  }
+/*все остальные before убрать*/
+
+
+/*блок с доставкой поуже (добавить код)  Надо его прижать к правому краю как на макете*/
+#widget-uid2eb437d8 .message{
+     width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Давай все таки попробуем так*/
+.last-chat-item .title {
+  font-size: 16px;
+}
+
+
+
+.chat-item-form .form-row .plh {
+  margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  /* left: 12px; */
+  /* right: 10px; */
+  /* margin: 23px 0 0 0;*/
+}/*все остальны margin убрать*/
+.chat-item-form .form-row .plh{
+  /*margin: 26px 0 0 0;*/
+}
