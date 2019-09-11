@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+       
     <div class="navbar_custom">
         <div class="container">
             <div class="row">
@@ -37,6 +37,7 @@
                 <div class="navbar-end col-sm-3">
                     <span class="greet">
                         Здравствуйте, Константин!
+                      
                     </span>
                     <ul class="nav navbar-nav auth">
                         <li><a href="" data-toggle="modal" data-target="#auth">Выйти</a></li>
@@ -47,7 +48,7 @@
 
         </div>
     </div>
-    <img class="chairs" src="images/Chairs.png" alt="">
+
 
 
     <div id="widget-1">
@@ -59,7 +60,9 @@
                         <img src="images/TessLogo_Middle.png" alt="">
                         <p>в сезон премьер</p>
                     </div>
-                    <img class="center_img" src="images/center_png.png" alt="">
+
+                    <img class="center_img col-sm-10 " src="images/center_png.png" alt="">
+
                     <div class="action">
                         <a class="action_button" href="">зарегистрировать чек</a>
                         <a class="more" href="">Подробнее</a>
@@ -502,6 +505,7 @@
 
 
     <div id="widget-6">
+
         <div class="container">
 
 
@@ -884,15 +888,25 @@
             </div>
 
         </div>
-    </div>
+
+
+
+
+
+
+        <img class="chairs" src="images/Chairs.png" alt="">
     </div>
 
+
     <div id="widget-7">
-        <div class="container">
-            <div class="footer col-sm-10 col-sm-offset-1">
-                <a href="">Правила акции</a>
-                <a href="">пользовательское соглашение</a>
-                <a href="">обратная связь</a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="footer col-sm-8 col-sm-offset-2">
+                    <a href="">Правила акции</a>
+                    <a href="">пользовательское соглашение</a>
+                    <a href="">обратная связь</a>
+                </div>
+
             </div>
         </div>
     </div>
@@ -1054,10 +1068,38 @@
         });
     </script>
     <script>
-       
-     
+        $(function () {
+            function chairsDontMove() {
+                let css = {
+                    'position': 'absolute',
+                }
+                $('.chairs').css(css);
+            }
 
+            function chairsmove() {
+                let css = {
+                    'position': 'fixed',
+                }
+                $('.chairs').css(css);
+            }
+            var blockTop = $('#widget-7').offset().top;
+            var $window = $(window);
+            $window.on('load scroll', function () {
+
+                var top = $window.scrollTop();
+                var height = $window.height();
+                if (top + height >= blockTop) {
+                    chairsDontMove();
+                } else {
+                    chairsmove();
+                }
+
+
+            });
+
+        });
     </script>
+    
 
 </body>
 
