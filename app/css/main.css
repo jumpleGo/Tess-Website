@@ -567,7 +567,8 @@ img {
     color: white;
     text-transform: uppercase;
     font-size: 30px;
-    margin: 0; }
+    margin: 0;
+    padding: 0 10px; }
 
 #widget-3 .content_3 {
   padding: 0 30px; }
@@ -576,7 +577,7 @@ img {
     background-size: 100%;
     background-repeat: no-repeat; }
     #widget-3 .content_3 .account_header {
-      margin-bottom: 60px;
+      margin-bottom: 40px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -589,12 +590,12 @@ img {
         font-family: 'Monsterrat-r';
         color: white;
         margin-top: 30px;
-        font-size: 50px;
+        font-size: 40px;
         line-height: 1.2; }
       #widget-3 .content_3 .account_header_edit img {
-        height: 35px;
+        height: 30px;
         width: auto;
-        margin-top: -50px; }
+        margin-top: -40px; }
       #widget-3 .content_3 .account_header_number {
         font-family: 'Monsterrat-r';
         color: #ff0f0a;
@@ -616,18 +617,18 @@ img {
             -ms-flex-pack: start;
                 justify-content: flex-start; }
         #widget-3 .content_3 .account_header_number .number {
-          margin-right: -60px;
-          font-size: 80px;
+          margin-right: -50px;
+          font-size: 70px;
           margin-bottom: -40px; }
         #widget-3 .content_3 .account_header_number .receipt {
-          margin-right: -60px;
+          margin-right: -50px;
           font-size: 50px;
           margin-bottom: -15px; }
       #widget-3 .content_3 .account_header_img img {
-        height: 100px;
+        height: 90px;
         width: auto; }
     #widget-3 .content_3 .account_details_center {
-      padding-bottom: 25px; }
+      padding-bottom: 20px; }
     #widget-3 .content_3 .account_details_email {
       display: -webkit-box;
       display: -webkit-flex;
@@ -641,9 +642,9 @@ img {
       #widget-3 .content_3 .account_details_email span {
         font-family: 'Monsterrat-r';
         color: white;
-        font-size: 27px; }
+        font-size: 22px; }
       #widget-3 .content_3 .account_details_email img {
-        height: 20px;
+        height: 25px;
         width: auto;
         margin-right: 35px; }
     #widget-3 .content_3 .account_details_phone {
@@ -658,11 +659,11 @@ img {
       #widget-3 .content_3 .account_details_phone span {
         font-family: 'Monsterrat-r';
         color: white;
-        font-size: 27px; }
+        font-size: 22px; }
       #widget-3 .content_3 .account_details_phone img {
         margin-right: 35px;
         height: auto;
-        width: 30px; }
+        width: 25px; }
     #widget-3 .content_3 .account .dotline_account {
       width: 90%;
       margin-left: 5%; }
@@ -689,12 +690,12 @@ img {
             -ms-flex-align: center;
                 align-items: center; }
         #widget-3 .content_3 .account_receipt_line .receipt img {
-          height: 50px;
+          height: 40px;
           width: auto;
           margin-right: 30px; }
         #widget-3 .content_3 .account_receipt_line .receipt span {
           font-family: 'Monsterrat-SemiBold';
-          font-size: 18px;
+          font-size: 16px;
           color: white; }
       #widget-3 .content_3 .account_receipt_line .status {
         display: -webkit-box;
@@ -711,12 +712,12 @@ img {
                 justify-content: center;
         text-align: center; }
         #widget-3 .content_3 .account_receipt_line .status img {
-          height: 25px;
+          height: 20px;
           width: auto;
           margin-right: 10px; }
         #widget-3 .content_3 .account_receipt_line .status span {
           font-family: 'Monsterrat-SemiBold';
-          font-size: 18px;
+          font-size: 16px;
           color: white; }
       #widget-3 .content_3 .account_receipt_line .date {
         display: -webkit-box;
@@ -736,28 +737,28 @@ img {
         #widget-3 .content_3 .account_receipt_line .date .day,
         #widget-3 .content_3 .account_receipt_line .date .time {
           font-family: 'Monsterrat-SemiBold';
-          font-size: 18px;
+          font-size: 16px;
           color: white; }
     #widget-3 .content_3 .account_prizes {
-      margin-top: 30px; }
+      margin-top: 20px; }
       #widget-3 .content_3 .account_prizes_header {
-        margin-bottom: 25px; }
+        margin-bottom: 15px; }
         #widget-3 .content_3 .account_prizes_header .date {
           color: white;
           font-family: 'Monsterrat-SemiBold';
-          font-size: 14px; }
+          font-size: 12px; }
         #widget-3 .content_3 .account_prizes_header .code {
           text-align: center;
           color: white;
           font-family: 'Monsterrat-SemiBold';
-          font-size: 14px; }
+          font-size: 12px; }
         #widget-3 .content_3 .account_prizes_header .prize {
           text-align: center;
           color: white;
           font-family: 'Monsterrat-SemiBold';
-          font-size: 14px; }
+          font-size: 12px; }
       #widget-3 .content_3 .account_prizes_content {
-        margin-bottom: 7px;
+        margin-bottom: 10px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -767,16 +768,16 @@ img {
             -ms-flex-align: center;
                 align-items: center; }
         #widget-3 .content_3 .account_prizes_content:last-child {
-          margin-bottom: 80px; }
+          margin-bottom: 40px; }
         #widget-3 .content_3 .account_prizes_content .date {
           color: white;
           font-family: 'Monsterrat-SemiBold';
-          font-size: 18px; }
+          font-size: 16px; }
         #widget-3 .content_3 .account_prizes_content .code {
           text-align: center;
           color: white;
           font-family: 'Monsterrat-SemiBold';
-          font-size: 18px; }
+          font-size: 16px; }
         #widget-3 .content_3 .account_prizes_content .prize {
           display: -webkit-box;
           display: -webkit-flex;
@@ -786,12 +787,12 @@ img {
           -webkit-align-items: center;
               -ms-flex-align: center;
                   align-items: center;
-          text-align: center;
+          text-align: left;
           color: white;
           font-family: 'Monsterrat-SemiBold';
-          font-size: 16px; }
+          font-size: 14px; }
           #widget-3 .content_3 .account_prizes_content .prize img {
-            width: 40px;
+            width: 30px;
             height: auto;
             margin-right: 10px; }
         #widget-3 .content_3 .account_prizes_content .button {
@@ -800,7 +801,7 @@ img {
             text-decoration: none;
             color: white;
             font-family: 'Monsterrat-SemiBold';
-            font-size: 16px;
+            font-size: 12px;
             background: #ff0f09;
             text-transform: uppercase;
             padding: 10px 20px;
@@ -1030,7 +1031,7 @@ img {
 
 #widget-7 {
   background: #000;
-  padding-bottom: 110px;
+  padding-bottom: 50px;
   padding-top: 100px; }
   #widget-7 .footer {
     z-index: 105;
